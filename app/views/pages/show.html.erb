@@ -1,0 +1,17 @@
+<div class="container">
+<div class="profile-card">
+  <div class="profile-card__inner">
+  <div class="profile-thumb">
+    <img src="<%="/user_images/#{@user.image_name}" %>" class="user-image" alt="アイコン">  
+    
+    </div>
+    <div class="profile-content">
+    <span class="profile-name"><%=@user.name%></span>
+    <span class="profile-job"><%=@user.email %></span>
+    <span class="profile-intro"><%=@user.intro %></span>
+    <%=link_to("編集する",edit_user_registration_path, method: :get) %>
+    </div>
+    </div>
+    
+</div>
+</div>
