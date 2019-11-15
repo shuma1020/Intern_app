@@ -1,15 +1,24 @@
-<div class="main users-index">
+
   <div class="container">
-    <h1 class="users-heading">ユーザー一覧</h1>
+    <h1 class="heading heading-member">
+    <span class="heading-title">Members</span>
+    </h1>
     <% @users.each do |user| %>
-      <div class="users-index-item">
-        <div class="user-left">
-          <img src="<%= "/user_images/#{user.image_name}" %>">
+    <div class="author-coin">
+      <div class="author-coin-item-inner js-author-coin-item-inner">
+        <div class="author-coin-item-default">
+          <article class="author-coin-item js-author-coin-item" data-other="1">
+        <%= link_to("/pages/#{user.id}") do%>
+          <img class="author-coin-thumbnail" src="<%= "/user_images/#{user.image_name}" %>">
+           </article>
+          <% end %>
         </div>
-        <div class="user-right">
-          <%= link_to(user.name, "/pages/#{user.id}") %>
-        </div>
+          <h2 class="author-coin-title">
+        <span class="author-coin-title-position"><%=user.name%></span>
+          </h2>
+       
       </div>
+    </div>
+      
     <% end %>
   </div>
-</div>

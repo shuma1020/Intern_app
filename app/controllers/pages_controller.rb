@@ -1,5 +1,5 @@
 class PagesController < UsersController
-  def index
+def index
     @users = User.all
 end
 

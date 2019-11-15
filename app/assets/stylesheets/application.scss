@@ -19,6 +19,18 @@
 
 @import "bootstrap";
 
+body{
+    padding: 30px 0;
+    margin:0;
+    font-family: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', メイリオ, Meiryo, 'ＭＳ Ｐゴシック', sans-serif;
+	background-color: #ffff;
+	
+}
+.container{
+    text-align: center;
+    padding: 24px 0;
+}
+
 
  ul, li{
     list-style-type: none;
@@ -50,7 +62,7 @@ $link-hover-color: #2581DC;
   float: left;
   line-height: $nav-height;
   text-transform: uppercase;
-  font-size: 1.4em;
+  font-size: 3.6em;
   a,
   a:visited {
     color: $nav-font-color;
@@ -70,7 +82,9 @@ nav {
   ul {
     list-style: none;
     margin: 0;
-    padding: 0;
+	padding: 0;
+	font-size: 2.0rem;
+    
     li {
       float: left;
       position: relative;
@@ -198,43 +212,88 @@ nav {
 .form-check-input{
 	margin-right: 0.1px;
 }
-body{
-    padding: 30px 0;
-    margin:0;
-    font-family: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', メイリオ, Meiryo, 'ＭＳ Ｐゴシック', sans-serif;
-    background-color: #ffff;
-}
-.container{
-    text-align: center;
-    padding: 90px 0;
+
+//index legのパクリ
+.heading-member .heading-title {
+    padding: 0 440px;
+    font-size: 48px;
 }
 
-.heading{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    background-color: #97C4C4;
+.heading-member {
+    display: block;
+    text-align: center;
 }
-.header-left {
-    padding-left: 40px;
+
+
+.heading {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0;
+    padding: 18px 0;
+}
+
+.author-coin-thumbnail {
+    display: block;
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
     
 }
-.header-left, .header-left a{
-    font-size: 44px;
-    color:#707070;
+
+.author-coin-item {
+    display: block;
+    max-width: 20%;
+    -webkit-flex-basis: 20%;
+    -ms-flex-preferred-size: 20%;
+    flex-basis: 20%;
+    padding: 10px 0 10px;
 }
-.header-right{
-    padding-top: 20px;
+
+.author-coin-item-default {
+    -webkit-transform: translate3d(0,0,2px);
+    transform: translate3d(0,0,2px);
 }
-.header-right a{ 
-   padding-right: 40px;  
-   color:#707070;
-   list-style: none;
-   font-size: 20px;
+
+.author-coin {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0;
 }
-.top-message{
-    font-size: 40px;
+
+.author-coin-title {
+    display: block;
+    padding: 0 10px;
 }
+
+.author-coin-title-position {
+    display: block;
+    margin: 15px 0 0;
+    font-size: 24px;
+    line-height: 1;
+    text-align: center;
+}
+
+.author-detail-description {
+    margin-top: 39px;
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: .05rem;
+}
+//
+
+
+
 
 
 .form{
